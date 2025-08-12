@@ -1,5 +1,6 @@
 import React from 'react'
 import Menu from './Menu';
+import '../css/app.css'
 // import menu data
 import data from './data'
 
@@ -9,7 +10,7 @@ const App = () => {
 
     return (
         <div className='app'>
-            <p>This is the main component.</p>
+            <p className='app-title'>Meny</p>
             <Menu array={meny}/>
         </div>
     )

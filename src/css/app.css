@@ -1,0 +1,9 @@
+.app { 
+    min-height: 100dvh;
+    padding: 2rem;
+}
+.app-title { 
+    margin: 0 0 1rem 0;
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem); 
+    text-align: center;
+}
