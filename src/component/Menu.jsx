@@ -3,20 +3,19 @@ import Dish from './Dish';
 
 const Menu = (props) => {
   return (
-    <div>
+    <div className='menu'>
         <p>This is the menu component.</p>
-        <p>Prop received with length: {props.array.length}</p>
 
-        <ul>
+        <section>
             {
-                props.array
-                .map(
-                    item => (
-                    <li key={item.id}>{item.tittel}</li>
-                    )
+              props.array
+              .map(
+                  item => (
+                  <Dish dish = {item} key={item.id}/>
+                  )
                 )
             }
-        </ul>
+        </section>
     </div>
   )
 }
