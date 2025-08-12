@@ -25,7 +25,7 @@ const Dish = (props) => {
 
   return (
     <article className={styles.dish}>
-      <img src={path} alt={alt} />
+      <img src={path} alt={alt} loading="lazy"/>
       <header>
         <h2 className={styles.title}>{props.dish.tittel}</h2>
         <h2 className={styles.price}>{props.dish.pris}</h2>
