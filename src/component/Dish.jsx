@@ -8,9 +8,9 @@ const Dish = (props) => {
         <h2 className='title'>{props.dish.tittel}</h2>
         <h2 className='price'>{props.dish.pris}</h2>
       </header>
-      
-      <p>{props.dish.ingredienser}</p> 
-
+      <main>
+        <p className='ingredients'>{props.dish.ingredienser}</p> 
+      </main>
       <footer>
         <p className='tag'>{props.dish.kategori}</p>
       </footer>
