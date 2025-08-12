@@ -1,9 +1,9 @@
 import React from 'react'
-import '../css/dish.css'
+import styles from '../css/dish.module.css'
 
 const Dish = (props) => {
 
-  const alt = props.dish.title;
+  const alt = props.dish.tittel;
   const path = `${import.meta.env.BASE_URL}img/${props.dish.id}.jpg`;
 
   const tagColor = {
@@ -24,17 +24,17 @@ const Dish = (props) => {
   let tagStyle = tagColor[props.dish.kategori] || {};
 
   return (
-    <article className='dish'>
+    <article className={styles.dish}>
       <img src={path} alt={alt} />
       <header>
-        <h2 className='title'>{props.dish.tittel}</h2>
-        <h2 className='price'>{props.dish.pris}</h2>
+        <h2 className={styles.title}>{props.dish.tittel}</h2>
+        <h2 className={styles.price}>{props.dish.pris}</h2>
       </header>
       <main>
-        <p className='ingredients'>{props.dish.ingredienser}</p> 
+        <p className={styles.ingredients}>{props.dish.ingredienser}</p> 
       </main>
       <footer>
-        <p className='tag' style={tagStyle}>{props.dish.kategori}</p>
+        <p className={styles.tag} style={tagStyle}>{props.dish.kategori}</p>
       </footer>
     </article>
   )

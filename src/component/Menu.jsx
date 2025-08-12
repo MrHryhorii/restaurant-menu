@@ -1,11 +1,11 @@
 import React from 'react'
 import Dish from './Dish';
-import '../css/menu.css'
+import styles from '../css/menu.module.css'
 
 const Menu = (props) => {
   return (
-    <div className='menu'>
-        <section className='cards'>
+    <div className={styles.menu}>
+        <section className={styles.cards}>
             {
               props.array
               .map(

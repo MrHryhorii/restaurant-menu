@@ -22,7 +22,7 @@
     z-index: 1;
 }
 
-header, main, footer {
+.dish header, .dish main, .dish footer {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
