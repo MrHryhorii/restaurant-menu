@@ -2,8 +2,13 @@ import React from 'react'
 import '../css/dish.css'
 
 const Dish = (props) => {
+
+  const alt = props.dish.title;
+  const path = `./src/img/${props.dish.id}.jpg`;
+
   return (
     <article className='dish'>
+      <img src={path} alt={alt} />
       <header>
         <h2 className='title'>{props.dish.tittel}</h2>
         <h2 className='price'>{props.dish.pris}</h2>

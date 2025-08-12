@@ -1,6 +1,8 @@
 .app { 
     min-height: 100dvh;
     padding: 2rem;
+
+    background-color: bisque;
 }
 .app-title { 
     margin: 0 0 1rem 0;

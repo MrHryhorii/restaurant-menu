@@ -7,6 +7,18 @@
   border-radius: 16px;
   background: #fff;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+  position:relative;
+  overflow: hidden;
+}
+
+.dish img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+
+    z-index: 1;
 }
 
 header, main, footer {
@@ -14,6 +26,8 @@ header, main, footer {
   justify-content: space-between;
   align-items: baseline;
   gap: 0.5rem;
+
+  z-index: 2;
 }
 
 .title { margin: 0; font-size: 1.05rem; }
