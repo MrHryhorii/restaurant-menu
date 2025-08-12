@@ -6,6 +6,21 @@ const Dish = (props) => {
   const alt = props.dish.title;
   const path = `./src/img/${props.dish.id}.jpg`;
 
+  const tagColor = {
+    Hovedrett:{
+      background: "#dce6ff",
+      border: "1px solid #90b7ff"
+    },
+    Forrett:{
+      background: "#dcffe8ff",
+      border: "1px solid #90ffa4ff"
+    },
+    Dessert:{
+      background: "#ffdcf8ff",
+      border: "1px solid #ff90ebff"
+    }
+  };
+
   return (
     <article className='dish'>
       <img src={path} alt={alt} />
