@@ -4,7 +4,7 @@ import '../css/dish.css'
 const Dish = (props) => {
 
   const alt = props.dish.title;
-  const path = `./src/img/${props.dish.id}.jpg`;
+  const path = `${import.meta.env.BASE_URL}img/${props.dish.id}.jpg`;
 
   const tagColor = {
     Hovedrett:{
@@ -21,6 +21,8 @@ const Dish = (props) => {
     }
   };
 
+  let tagStyle = tagColor[props.dish.kategori] || {};
+
   return (
     <article className='dish'>
       <img src={path} alt={alt} />
@@ -32,7 +34,7 @@ const Dish = (props) => {
         <p className='ingredients'>{props.dish.ingredienser}</p> 
       </main>
       <footer>
-        <p className='tag'>{props.dish.kategori}</p>
+        <p className='tag' style={tagStyle}>{props.dish.kategori}</p>
       </footer>
     </article>
   )
